@@ -1,0 +1,71 @@
+.banner {
+  /* የባነሩን ቁመት ከፍ በማድረግ የምስሉን ቦታ ማሳደግ */
+  height: 85vh;
+  min-height: 550px;
+  color: white;
+  object-fit: contain;
+  position: relative;
+  margin-top: -10vh;
+}
+
+.banner__contents {
+  margin-left: 30px;
+  padding-top: 150px;
+}
+
+.banner__title {
+  font-size: 3.5rem; /* ከትልቁ ምስል ጋር እንዲመጣ በርዕሱ መጠን ትንሽ መጨመር */
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.banner__description {
+  width: 45rem;
+  line-height: 1.3;
+  padding: 1rem 0;
+  font-size: 1rem;
+  max-width: 420px;
+  height: 80px;
+}
+
+.banner__button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.play {
+  color: #000;
+  background-color: #fff;
+}
+
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+}
+
+/* 
+  በጣም አስፈላጊ፦ የጥላውን (fade) ቁመት ወደ 20vh በመቀነስ 
+  ምስሉ በጥቁር ሳይሸፈን ሰፊ ቦታ ይዞ በግልጽ እንዲታይ ያደርገዋል
+*/
+.banner__fadeBottom {
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
